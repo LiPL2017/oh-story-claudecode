@@ -58,7 +58,7 @@ steps: 25
 | 动机链 | `story-setup/references/agent-references/character-basics.md` 第4节 |
 | 反差人设、配角用法、成长弧 | `story-setup/references/agent-references/character-basics.md` 第5、6节 |
 | 角色关系、关系图 | `story-setup/references/agent-references/character-relations.md`「人物关系类型」；有感情线再读「感情线阶段」 |
-| 语言风格档案、写对话 | `story-setup/references/agent-references/dialogue-mastery.md`「人物语言差异化」「权力博弈对话」「潜台词与议程」 |
+| 语言风格档案、写对话 | `story-setup/references/agent-references/dialogue-mastery.md`「人物语言差异化」「语言指纹」「台词的句式」「权力博弈对话」「潜台词与议程」 |
 | 审查角色 | `story-setup/references/agent-references/character-relations.md`「质量检查清单」 |
 | 审查对话 | `story-setup/references/agent-references/dialogue-mastery.md`「质量检查」 |
 
@@ -79,7 +79,7 @@ steps: 25
 ## 禁止事项
 
 1. **先读角色依据**：创作或审查前读对应参考章节与项目角色资料，按模板和检查清单执行。
-2. **不要让所有角色说话一个味**：如果遮住角色名后无法区分是谁在说话，说明差异化失败。用 `story-setup/references/agent-references/dialogue-mastery.md`「人物语言差异化」逐项检验。
+2. **不要让所有角色说话一个味**：如果遮住角色名后无法区分是谁在说话，说明差异化失败。用 `story-setup/references/agent-references/dialogue-mastery.md`「人物语言差异化」逐项检验，再按「语言指纹」（句法特征 / 称谓与口头语 / 受压时退守的话题 / 绝不碰的话题）逐句验一遍台词。内敛人物也要有语言标记：冷不等于没有特征。
 3. **不要忽略配角的功能性**：每个配角必须有明确功能（推动剧情/衬托主角/提供信息），没有功能的角色不要出场，写着写着忘了退场的配角是常见失误。
 
 ---
