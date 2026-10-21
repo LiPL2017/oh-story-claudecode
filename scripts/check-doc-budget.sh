@@ -62,8 +62,9 @@ const note = [];
 const strip = (text) => text.replace(/\s/g, "").length;
 
 // 取「文件#小节」：从标题行到下一个同级或更高级标题（跳过代码围栏里的行）。
+// 先去掉 \r：core.autocrlf=true 的 Windows 工作区是 CRLF，而 JS 正则的 . 不吃 \r，标题行会整行失配。
 const sectionOf = (text, anchor) => {
-  const lines = text.split("\n");
+  const lines = text.replace(/\r/g, "").split("\n");
   let fence = false;
   let start = -1;
   let level = 0;

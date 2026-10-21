@@ -861,9 +861,13 @@ function findStockReactionTic(proseLines) {
       pattern.lastIndex = 0;
       let match;
       while ((match = pattern.exec(narrative)) !== null) {
+        const sample = sentenceAround(narrative, match.index);
+        // 仅当句子中存在明确的外力打击或器质性创伤结果时，才豁免生理应激反应，防止无伤状态下的套词自我豁免
+        if (/(?:骨|碎|裂|折|断|血|创|碾|砸|掐|勒|刃|伤口|皮开肉绽|肿黑)/.test(sample)) {
+          continue;
+        }
         hits += 1;
         if (firstLine === null) firstLine = lineNo;
-        const sample = sentenceAround(narrative, match.index);
         if (samples.length < 6 && sample && !samples.includes(sample)) samples.push(sample);
       }
     }
